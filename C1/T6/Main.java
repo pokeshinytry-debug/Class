@@ -3,7 +3,7 @@ public class Main {
         double[] arr = {10.0, 1.5, 10.0, 2.3, 0.7, 4.6, 5.0, 3.3, 7.8, 8.1, 9.9, 10.0};
         func(arr);
     }
-
+    
     public static void func(double[] arr) {
         printMax(arr, 0, Max(arr, 0, arr[0]));
     }
