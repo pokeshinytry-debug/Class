@@ -18,7 +18,7 @@ public class Main {
     public static boolean isSorted(IntNode lst) {
         IntNode pos = lst;
         while (pos.getNext() != null) {
-            if (pos.getvalue() > pos.getNext().getvalue()) {
+            if (pos.getValue() > pos.getNext().getValue()) {
                 return false;
             }
             pos = pos.getNext();

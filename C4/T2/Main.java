@@ -19,11 +19,11 @@ public class Main {
     public static int getRow(IntNode lst, int num) {
         int count = 0;
         IntNode pos = lst;
-        if (pos.getvalue() == num) {
+        if (pos.getValue() == num) {
             count++;
         }
         while (pos.getNext() != null) {
-            if (pos.getvalue() != num && pos.getNext().getvalue() == num) {
+            if (pos.getValue() != num && pos.getNext().getValue() == num) {
                 count++;
             }
             pos = pos.getNext();

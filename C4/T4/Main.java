@@ -20,10 +20,18 @@ public class Main {
         int countEven = 0;
         IntNode pos = lst;
         while (pos != null) {
-
+            if (pos.getValue() % 2 == 0) {
+                countEven++;
+            } else {
+                countOdd++;
+            }
+            pos = pos.getNext();
         }
         if (countOdd > countEven) {
-            
+            return 'z';
+        } else if (countEven > countOdd) {
+            return 'y';
         }
+        return 's';
     }
 }
